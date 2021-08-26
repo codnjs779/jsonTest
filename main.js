@@ -1,4 +1,4 @@
-let ul = document.querySelector('ul');
+let box = document.querySelector('ul');
 
 fetch("https://jsonplaceholder.typicode.com/todos")
 .then((response) => response.json())
@@ -15,5 +15,6 @@ fetch("https://jsonplaceholder.typicode.com/todos")
         if(completed === true){
             element.id = "completed";
         }
+
     }
 })
