@@ -15,7 +15,11 @@ li{
     border: 1px solid;
     text-align: center;
 }
+li:hover{
+    box-shadow: 10px 5px 5px gray;
+}
 
-#completed {
+#completed{
     background-color: wheat;
 }
+
