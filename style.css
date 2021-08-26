@@ -10,3 +10,7 @@ li{
     margin-bottom: 10px;
     border: 1px solid;
 }
+
+#completed {
+    background-color: wheat;
+}
