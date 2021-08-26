@@ -9,5 +9,11 @@ fetch("https://jsonplaceholder.typicode.com/todos")
         let element = document.createElement("li");
 
         element.innerText = title;
+
+        let completed = json[i].completed;
+
+        if(completed === true){
+            element.id = "completed";
+        }
     }
 })
