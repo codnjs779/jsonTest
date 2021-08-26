@@ -15,6 +15,6 @@ fetch("https://jsonplaceholder.typicode.com/todos")
         if(completed === true){
             element.id = "completed";
         }
-
+        box.appendChild(element);
     }
-})
+});
