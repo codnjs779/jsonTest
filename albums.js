@@ -11,7 +11,6 @@ fetch('https://jsonplaceholder.typicode.com/albums')
 
             let element = document.createElement('li');
             element.innerText = `userId: ${userId}, id: ${id}, title: ${title}`;
-
             albums.appendChild(element);
         }
         
