@@ -1,8 +1,8 @@
-let albums = document.querySelector('albums');
+let albums = document.querySelector('.albums');
 
 fetch('https://jsonplaceholder.typicode.com/albums')
     .then(response => response.json())
-    .then(function(json){
+    .then(function (json){
         console.log(json);
         for(let i=0; i < json.length; i++){
             let userId = json[i].userId;
@@ -10,11 +10,11 @@ fetch('https://jsonplaceholder.typicode.com/albums')
             let title = json[i].title;
 
             let element = document.createElement('li');
-            element.innerText = userId;
-            console.log(element.length);
-        
-        
-        
+            element.innerText = `userId: ${userId}, id: ${id}, title: ${title}`;
+
+            albums.appendChild(element);
         }
+        
     })
+
 
