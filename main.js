@@ -1,4 +1,6 @@
+
 let box = document.querySelector('ul');
+
 
 fetch("https://jsonplaceholder.typicode.com/todos")
 .then((response) => response.json())
@@ -18,3 +20,11 @@ fetch("https://jsonplaceholder.typicode.com/todos")
         box.appendChild(element);
     }
 });
+
+let control = document.querySelector('.control')
+
+ control.addEventListener('click', () => {
+    box.style.backgroundColor='black'
+ });
+ 
+ 
